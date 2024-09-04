@@ -8,5 +8,4 @@ function updateWindowSize() {
 }
 
 updateWindowSize();
-
 window.addEventListener("resize", updateWindowSize);
