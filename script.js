@@ -1,11 +1,12 @@
-//your JS code here. If required.
-function updateWindowSize() {
-	var h = window.innerHeight;
-	var w = window.innerWidth;
+function updateSize() {
+  var h = window.innerHeight;
+  var w = window.innerWidth;
 
-	let h1 = document.querySelector(".sizeInfo h1");
-	h1.innerText = `Width: ${w} and Height: ${h}`;
+  let h1 = document.querySelector(".sizeInfo h1");
+  h1.textContent = `Width: ${w} and Height: ${h}`;
+  console.log(h);
 }
 
-updateWindowSize();
-window.addEventListener("resize", updateWindowSize);
+updateSize();
+
+window.addEventListener("resize", updateSize);
